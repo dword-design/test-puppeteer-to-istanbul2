@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "test": "NODE_ENV=test nyc --reporter lcov --reporter text --require @babel/register --all --exclude .nuxt --exclude coverage mocha --timeout 80000 model/index.spec.js"
+  },
+  "devDependencies": {
+    "@babel/register": "^7.13.8",
+    "@dword-design/babel-config": "^1.7.5",
+    "@dword-design/puppeteer": "^3.0.0",
+    "mocha": "^8.3.1",
+    "mocha-ui-exports-auto-describe": "^1.0.9",
+    "nuxt": "^2.15.3",
+    "nyc": "^15.1.0",
+    "puppeteer-to-istanbul": "^1.4.0"
+  },
+  "dependencies": {
+    "clone": "^2.1.2",
+    "fs-extra": "^9.1.0",
+    "micromatch": "^4.0.2",
+    "v8-to-istanbul": "^7.1.0"
+  }
+}
